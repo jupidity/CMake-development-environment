@@ -1,7 +1,7 @@
 ## Overview
 ---
 
-a simple development environment for `C/C++` using `CMake` to glob custom libraries and and code in a `src` directory to generate an executable. 
+a simple development environment for `C/C++` using `CMake` to glob custom libraries and and code in a `src` directory into an executable.  
 
 ## Setup
 ---
@@ -18,7 +18,7 @@ From here, you can run `cmake` on the `src` directory
 
     $ cmake ../src
 
-A makefile should have been generated in the build directory, along with other CMake files. Create and executable by running `make`
+A makefile should have been generated in the build directory, along with other CMake files. Create an executable by running `make`:
 
     $ make
 

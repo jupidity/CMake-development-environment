@@ -13,4 +13,4 @@ file(GLOB SRCS *.cpp *.c *.h)
 
 # define the target executable and the source file needed to compile it
 
-add_executable(message ${SRCS} )
+add_executable(main ${SRCS} )

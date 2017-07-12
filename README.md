@@ -1,21 +1,42 @@
 ## Overview
 ---
 
-a development environment for `C/C++` using `CMake` in a `Linux` system (in my case `Ubuntu 16.04`)
+a simple development environment for `C/C++` using `CMake` to glob custom libraries and and code in a `src` directory to generate an executable. 
 
-the directory can be opened in a code editor of choice (vim, emacs, atom, visual studio)
+## Setup
+---
+clone the repo:
 
-* main code is written in `main.cpp`
+    git clone https://github.com/jupidity/CMake-development-environment.git
 
-* custom libraries ``.h`` and ``.cpp`` files are written in the `src` directory
+create a build folder
 
-* compilation is performed in the base directory shell by running cmake:
+    $ mkdir build
+    $ cd build
 
-      $ cmake
+From here, you can run `cmake` on the `src` directory
 
-  and compiles to a build folder
+    $ cmake ../src
 
-* executable can be run after compilation by shell command
+A makefile should have been generated in the build directory, along with other CMake files. Create and executable by running `make`
 
-      $ ./[executable]
+    $ make
+
+the executable `main` should now be in the `/build` directory. You can run it using the shell `./` command
+
+    $ ./main
+
+
+if executed correctly, the terminal should print the message :
+
+    "happy first day of the lunar cycle, cool kids!"
+
+## Usage
+---
+
+
+  * main code is written in `main.cpp`
+
+  * custom libraries ``.h`` and ``.cpp`` files are written in the `src` directory  
+
 * debugging can be performed using `gdb`

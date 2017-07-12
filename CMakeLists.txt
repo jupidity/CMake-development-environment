@@ -7,7 +7,7 @@
 cmake_minimum_required (VERSION 2.8.11)
 # provide a name for your project. Here I have called it message, since the 
 # library in the src directory passes a message to std out
-project (message)
+project (main)
 
 
 
